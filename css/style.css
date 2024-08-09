@@ -563,6 +563,12 @@ pre code {
     max-width: 1140px;
   }
 }
+@media (max-width: 767.98px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
 .container-fluid {
   width: 100%;
@@ -3674,6 +3680,12 @@ input[type=button].btn-block {
   background: no-repeat center center;
   background-size: 100% 100%;
 }
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+    padding: 10px;
+    font-size: 20px;
+  }
+}
 
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
@@ -4557,7 +4569,11 @@ a.badge-dark:focus, a.badge-dark.focus {
     transition: none;
   }
 }
-
+@media (max-width: 767.98px) {
+  .progress {
+    height: 8px;
+  }
+}
 .progress-bar-striped {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 1rem 1rem;
