@@ -256,12 +256,12 @@ select {
   word-wrap: normal;
 }
 
-button,
+/* button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
-}
+  /* -webkit-appearance: button; */
+/* } */
 
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -284,12 +284,12 @@ input[type=checkbox] {
   padding: 0;
 }
 
-input[type=date],
+/* input[type=date],
 input[type=time],
 input[type=datetime-local],
-input[type=month] {
-  -webkit-appearance: listbox;
-}
+input[type=month] { */
+  /* -webkit-appearance: listbox; */
+/* } */
 
 textarea {
   overflow: auto;
@@ -326,7 +326,7 @@ progress {
 
 [type=search] {
   outline-offset: -2px;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
 }
 
 [type=search]::-webkit-search-decoration {
@@ -9039,8 +9039,12 @@ h1, h2, h3, h4, h5,
 }
 @media (max-width: 991.98px) {
   .ftco-navbar-light .navbar-nav {
-    padding-bottom: 20px;
-    margin-right: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    padding: 10px 0;
   }
 }
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
@@ -9781,6 +9785,18 @@ h1, h2, h3, h4, h5,
   -ms-border-radius: 5px;
   border-radius: 5px;
 }
+@media (max-width: 767.98px) {
+  .resume-wrap {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .fixed-height {
+    height: auto;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+}
 .resume-wrap .date {
   font-weight: 900;
   font-size: 26px;
@@ -9924,6 +9940,15 @@ h1, h2, h3, h4, h5,
   font-size: 20px;
   font-weight: 400;
   color: #fff;
+}
+@media (max-width: 767.98px) {
+  .skill-mf .progress {
+    margin-bottom: 20px;  
+  }
+  
+  .skill-mf .progress-bar {
+    height: 8px;
+  }
 }
 
 .ftco-hireme {
@@ -10117,10 +10142,17 @@ textarea.form-control {
 }
 @media (max-width: 767.98px) {
   .ftco-section {
-    padding: 6em 0;
+    padding: 3em 0;
+  }
+  
+  h2, .h2 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 0.9rem;
   }
 }
-
 .ftco-no-pt {
   padding-top: 0 !important;
 }
@@ -10321,7 +10353,7 @@ textarea.form-control {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  -webkit-backface-visibility: hidden;
+  /* -webkit-backface-visibility: hidden; */
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
