@@ -97,8 +97,9 @@
   }
 }
 
-
-/* project image zoom effect */
+.justified-text {
+  text-align: justify;
+}
 
 .zoom-effect {
   overflow: hidden;
@@ -108,8 +109,201 @@
 .zoom-effect:hover {
   transform: scale(1.1);
 }
+@media (max-width: 767px) {
+  .about-info p { 
+    margin-bottom: 10px; 
+    font-size: 14px;
+  }
+  .skill-mf .progress {
+    height: 8px;
+    margin-bottom: 15px;
+  }
+  .justified-text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .about-info li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  
+  [class*="col-"] {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+  
+  .ftco-animate {
+    opacity: 1 !important;
+  }
+  
+  .progress-wrap {
+    margin-bottom: 20px;
+  }
+  
+  .about-info li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .justified-text {
+    text-align: justify;
+    hyphens: auto;
+    word-break: break-word;
+  }
+}
+@media (max-width: 767px) {
+  .ftco-animate {
+    opacity: 1 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  .ftco-animate > * {
+    width: 100%;
+  }
 
+  .about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-info li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .skill-mf {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .big-4 {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  #about-section .img-about {
+    flex-direction: column;
+  }
+
+  #about-section .about-img {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #about-section .about-img img {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  #about-section .about-info {
+    text-align: center;
+  }
+
+  #about-section .about-info p {
+    margin-bottom: 10px;
+  }
+
+  #about-section .about-info .title-s {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  #about-section .col-sm-6,
+  #about-section .col-md-5,
+  #about-section .col-md-7 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .intro-section,
+  .one-forth {
+    padding-top: 100px !important; /* Increased top padding */
+  }
+
+  .intro-section .slider-text,
+  .one-forth .text {
+    height: auto !important;
+    width: 100% !important;
+    padding: 20px !important;
+    text-align: left !important;
+  }
+
+  .intro-section .one-forth,
+  .one-forth {
+    width: 100% !important;
+  }
+
+  .intro-section .subheading,
+  .one-forth .subheading {
+    font-size: 16px;
+  }
+
+  .intro-section h1,
+  .one-forth h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .intro-section #typing-animation,
+  #typing-animation {
+    font-size: 20px;
+    display: inline-block;
+    min-width: 200px;
+    min-height: 30px;
+    vertical-align: bottom;
+  }
+
+  .intro-section h2,
+  .one-forth h2 {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+
+  .intro-section p,
+  .one-forth p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .intro-section .btn,
+  .one-forth .btn {
+    margin: 10px 10px 0 0;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .intro-section .ftco-animate {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
 </style>
 
 
@@ -143,7 +337,7 @@
 	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.gif);">
 	          	 <div class="overlay"></div>
 	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          <div class="one-forth d-flex align-items-center ftco-animate intro-section" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<span class="subheading">Hiya!</span>
 			            <h1 class="mb-4 mt-3">I'm <span>Kartikey Vyas</span></h1>
