@@ -882,6 +882,77 @@ h1, h2, h3, h4, h5,
 		text-transform: uppercase;
 	}
 }
+@media (max-width: 767px) {
+	.resume-wrap {
+	  padding: 20px;
+	  margin-bottom: 20px;
+	}
+	
+	.fixed-height {
+	  height: auto;
+	  max-height: 400px;
+	  overflow-y: auto;
+	}
+}
+@media (max-width: 767px) {
+	.ftco-section {
+	  padding: 4em 0;
+	}
+  
+	.container {
+	  padding-left: 15px;
+	  padding-right: 15px;
+	}
+  
+	h1 { font-size: 2.5rem; }
+	h2 { font-size: 2rem; }
+	h3 { font-size: 1.75rem; }
+	p { font-size: 1rem; }
+}
+@media (max-width: 991px) {
+	.ftco-navbar-light {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  z-index: 1030;
+	  padding: 10px 15px;
+  
+	  .navbar-nav {
+		background: rgba(0, 0, 0, 0.8);
+		padding: 10px 0;
+		
+		> .nav-item > .nav-link {
+		  padding: 10px 20px;
+		  color: $white;
+		}
+	  }
+  
+	  .navbar-toggler {
+		color: $white;
+	  }
+	}
+}
+@media (max-width: 767px) {
+	.progress-wrap {
+	  margin-bottom: 20px;
+	}
+	
+	.progress {
+	  height: 8px;
+	}
+}
+@media (max-width: 767px) {
+	.project {
+	  height: 250px;
+	  
+	  .text {
+		opacity: 1;
+		background: rgba(0, 0, 0, 0.4);
+		padding: 10px;
+	  }
+	}
+}
 
 .fixed-height {
     height: 1100px; /* Adjust the height as per your requirement */

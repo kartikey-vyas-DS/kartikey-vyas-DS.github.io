@@ -256,12 +256,12 @@ select {
   word-wrap: normal;
 }
 
-/* button,
+button,
 [type=button],
 [type=reset],
 [type=submit] {
-  /* -webkit-appearance: button; */
-/* } */
+  -webkit-appearance: button;
+}
 
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -284,12 +284,12 @@ input[type=checkbox] {
   padding: 0;
 }
 
-/* input[type=date],
+input[type=date],
 input[type=time],
 input[type=datetime-local],
-input[type=month] { */
-  /* -webkit-appearance: listbox; */
-/* } */
+input[type=month] {
+  -webkit-appearance: listbox;
+}
 
 textarea {
   overflow: auto;
@@ -326,7 +326,7 @@ progress {
 
 [type=search] {
   outline-offset: -2px;
-  /* -webkit-appearance: none; */
+  -webkit-appearance: none;
 }
 
 [type=search]::-webkit-search-decoration {
@@ -561,12 +561,6 @@ pre code {
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
-  }
-}
-@media (max-width: 767.98px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 
@@ -3625,7 +3619,6 @@ input[type=button].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
@@ -3679,12 +3672,6 @@ input[type=button].btn-block {
   content: "";
   background: no-repeat center center;
   background-size: 100% 100%;
-}
-@media (max-width: 991.98px) {
-  .navbar-toggler {
-    padding: 10px;
-    font-size: 20px;
-  }
 }
 
 @media (max-width: 575.98px) {
@@ -4569,11 +4556,7 @@ a.badge-dark:focus, a.badge-dark.focus {
     transition: none;
   }
 }
-@media (max-width: 767.98px) {
-  .progress {
-    height: 8px;
-  }
-}
+
 .progress-bar-striped {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 1rem 1rem;
@@ -6110,25 +6093,6 @@ button.bg-dark:focus {
 
 .justify-content-start {
   justify-content: flex-start !important;
-}
-/* Adding this for border line  */
-
-.beautiful-border {
-  border: 2px solid #002147; /* Navy blue border */
-  border-radius: 8px; /* Rounded corners */
-  padding: 20px; /* Space inside the border */
-  margin-bottom: 20px; /* Space below the bordered element */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-  background-color: #f8f9fa; /* Light background color */
-  transition: transform 0.3s ease-in-out; /* Smooth transition effect */
-}
-
-.beautiful-border:hover {
-  transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-.justified-text {
-  text-align: justify;
 }
 
 .justify-content-end {
@@ -9039,12 +9003,8 @@ h1, h2, h3, h4, h5,
 }
 @media (max-width: 991.98px) {
   .ftco-navbar-light .navbar-nav {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  
-  .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    padding: 10px 0;
+    padding-bottom: 20px;
+    margin-right: 0;
   }
 }
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
@@ -9244,7 +9204,6 @@ h1, h2, h3, h4, h5,
 .navbar-brand {
   font-weight: 900;
   font-size: 24px;
-  font-style: normal;
   text-transform: uppercase;
 }
 
@@ -9774,7 +9733,6 @@ h1, h2, h3, h4, h5,
   color: #002147;
 }
 
-
 .resume-wrap {
   width: 100%;
   margin-bottom: 30px;
@@ -9784,18 +9742,6 @@ h1, h2, h3, h4, h5,
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
-}
-@media (max-width: 767.98px) {
-  .resume-wrap {
-    padding: 15px;
-    margin-bottom: 15px;
-  }
-  
-  .fixed-height {
-    height: auto;
-    max-height: 300px;
-    overflow-y: auto;
-  }
 }
 .resume-wrap .date {
   font-weight: 900;
@@ -9812,13 +9758,79 @@ h1, h2, h3, h4, h5,
   text-transform: uppercase;
 }
 
+@media (max-width: 767px) {
+  .resume-wrap {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .fixed-height {
+    height: auto;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+}
+@media (max-width: 767px) {
+  .ftco-section {
+    padding: 4em 0;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 991px) {
+  .ftco-navbar-light {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    padding: 10px 15px;
+  }
+  .ftco-navbar-light .navbar-nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+  }
+  .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    padding: 10px 20px;
+    color: #fff;
+  }
+  .ftco-navbar-light .navbar-toggler {
+    color: #fff;
+  }
+}
+@media (max-width: 767px) {
+  .progress-wrap {
+    margin-bottom: 20px;
+  }
+  .progress {
+    height: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .project {
+    height: 250px;
+  }
+  .project .text {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+  }
+}
 .fixed-height {
   height: 1100px; /* Adjust the height as per your requirement */
-  overflow-y: auto; /* Add scroll if content exceeds height */
-}
-
-.fixed-heighted {
-  height: 213px; /* Adjust the height as per your requirement */
   overflow-y: auto; /* Add scroll if content exceeds height */
 }
 
@@ -9941,15 +9953,6 @@ h1, h2, h3, h4, h5,
   font-weight: 400;
   color: #fff;
 }
-@media (max-width: 767.98px) {
-  .skill-mf .progress {
-    margin-bottom: 20px;  
-  }
-  
-  .skill-mf .progress-bar {
-    height: 8px;
-  }
-}
 
 .ftco-hireme {
   background: #002147;
@@ -9961,7 +9964,7 @@ h1, h2, h3, h4, h5,
   font-weight: 900;
 }
 .ftco-hireme h2 span {
-  color: #add8e6;
+  color: #002147;
 }
 
 @media (min-width: 992px) {
@@ -10142,17 +10145,10 @@ textarea.form-control {
 }
 @media (max-width: 767.98px) {
   .ftco-section {
-    padding: 3em 0;
-  }
-  
-  h2, .h2 {
-    font-size: 1.5rem;
-  }
-  
-  p {
-    font-size: 0.9rem;
+    padding: 6em 0;
   }
 }
+
 .ftco-no-pt {
   padding-top: 0 !important;
 }
@@ -10353,7 +10349,7 @@ textarea.form-control {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  /* -webkit-backface-visibility: hidden; */
+  -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -10571,10 +10567,6 @@ textarea.form-control {
 }
 .contact-section .contact-form {
   width: 100%;
-}
-/* this is custom heading class to manage only text behind background image */
-.ftco-section.ftco-hireme .custom-heading {
-  color: #ffffff;
 }
 
 .contact-section .img {
